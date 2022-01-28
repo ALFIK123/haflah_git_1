@@ -7,7 +7,7 @@ def menuUtama():
     print("...................................................")
     print("""Nama barang yang dijual :
 		1.pakaian
-		2.elektronik
+		2.elektroniks
 		3.tas     
 		4.sepatu/sandal
 		5.kecantikan""")
