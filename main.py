@@ -7,10 +7,8 @@ def menuUtama():
     print("...................................................")
     print("""Nama barang yang dijual :
 		1.pakaian
-		2.elektroniks
-		3.tas     
-		4.sepatu/sandal
-		5.kecantikan""")
+		2.kecantikan
+        3.camping""")
     pilihan = int(input("Pilih barang yang ingin anda beli [1-5]:"))
     if (pilihan == 1):
         jenis = ("pakaian")
@@ -55,128 +53,7 @@ def menuUtama():
             harga = harga[7]
         elif (pakaian == 9):
             harga = harga[8]
-
     if (pilihan == 2):
-        jenis = "elektronik"
-        print("""jenis elektronik yang dibeli
-						1.Tv
-						2.Kulkas
-						3.Ac
-						4.penanak nasi
-						5.Mesin cuci
-						6.Microwave
-						7.kipas angin
-						8.VCD Player""")
-        print("""harga barang
-				1.2.000.000,
-				2.5.000.000,
-				3.3.000.000,
-				4.3.50000,
-				5.2.000.000,
-				6.1.000.000,
-				7.700.000,
-				8.500.000""")
-        elektronik = int(input("jenis barang elektronik  yang anda beli : "))
-        harga = [2000000, 500000, 3000000, 350000,
-                 2000000, 1000000, 700000, 500000]
-        if (elektronik == 1):
-            harga = harga[0]
-        elif (elektronik == 2):
-            harga = harga[1]
-        elif (elektronik == 3):
-            harga = harga[2]
-        elif (elektronik == 4):
-            harga = harga[3]
-        elif (elektronik == 5):
-            harga = harga[4]
-        elif (elektronik == 6):
-            harga = harga[5]
-        elif (elektronik == 7):
-            harga = harga[6]
-        elif (elektronik == 8):
-            harga = harga[7]
-    if (pilihan == 3):
-        jenis = "tas"
-        print("""jenis tas yang dibeli
-						1.Tas anak anak
-						2.Tas jalan 
-						3.Tas ransel
-						4.Tas sekolah anak
-						5.Tas sekolah dewasa
-						6.Totebag
-						7.Handbag""")
-        print("""harga barang 
-								1.50.000,
-								2.115.000,
-								3.100.000,
-								4.150.000,
-								5.200.000
-								6.65.000
-								7.150.000""")
-        tas = int(input("jenis barang tas  yang anda beli : "))
-        harga = [50000, 115000, 100000, 150000, 200000, 65000, 150000]
-        if (tas == 1):
-            harga = harga[0]
-        elif (tas == 2):
-            harga = harga[1]
-        elif (tas == 3):
-            harga = harga[2]
-        elif (tas == 4):
-            harga = harga[3]
-        elif (tas == 5):
-            harga = harga[4]
-        elif (tas == 6):
-            harga = harga[5]
-        elif (tas == 7):
-            harga = harga[6]
-    if (pilihan == 4):
-        jenis = "sepatu/sandal"
-        print("""jenis sepatu yang dibeli
-						1.sepatu sekolah sd
-						2.sepatu sekolah smp
-						3.sepatu sma
-						4.sepatu pantofel
-						5.sepatu kets
-						6.sepatu flat
-						7.sepatu gunung
-						8.sepatu olahraga
-						9.sendal jalan pria
-						10.sendal jalan wanita""")
-        print("""harga barang 
-							1.60.000,
-							2.100.000,
-							3.120.000,
-							4.100.000,
-							5.70.000,
-							6.50.000,
-							7.200.000,
-							8.250.000,
-							9.70.000,
-							10.80.000""")
-        sepatu = int(input("jenis barang sepatu  yang anda beli : "))
-        harga = [60000, 100000, 120000, 100000, 70000,
-                 50000, 200000, 250000, 700000, 80000]
-        if (sepatu == 1):
-            harga = harga[0]
-        elif (sepatu == 2):
-            harga = harga[1]
-        elif (sepatu == 3):
-            harga = harga[2]
-        elif (sepatu == 4):
-            harga = harga[3]
-        elif (sepatu == 5):
-            harga = harga[4]
-        if (sepatu == 6):
-            harga = harga[5]
-        elif (sepatu == 7):
-            harga = harga[6]
-        elif (sepatu == 8):
-            harga = harga[7]
-        elif (sepatu == 9):
-            harga = harga[8]
-        elif (sepatu == 10):
-            harga = harga[9]
-    if (pilihan == 5):
         jenis = "make up"
         print("""jenis barang yang dibeli
 						1.lipstik
@@ -239,6 +116,39 @@ def menuUtama():
             harga = harga[12]
         elif (make_up == 14):
             harga = harga[13]
+    if (pilihan == 3):
+        jenis = "camping"
+        print("""jenis camping yang dibeli
+						1.Tas
+						2.Tenda
+						3.Kompor mini
+						4.gas
+                        5.kursi/Bangku camping fc 300""")
+        print("""harga barang
+				1.2.000.000,
+				2.5.000.000,
+				3.3.000.000,
+				4.3.50000,
+				5.2.000.000,""")
+        camping = int(input("jenis barang camping yang anda beli : "))
+        harga = [2000000, 500000, 3000000, 350000,
+                 2000000, 1000000, 700000, 500000]
+        if (camping == 1):
+            harga = harga[0]
+        elif (camping == 2):
+            harga = harga[1]
+        elif (camping == 3):
+            harga = harga[2]
+        elif (camping == 4):
+            harga = harga[3]
+        elif (camping == 5):
+            harga = harga[4]
+        elif (camping == 6):
+            harga = harga[5]
+        elif (camping == 7):
+            harga = harga[6]
+        elif (camping == 8):
+            harga = harga[7]
 
     print("Harga yang harus dibayar Rp."+str(harga))
     print("""jenis transaksi yang dipilih
